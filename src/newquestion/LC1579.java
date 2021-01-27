@@ -1,8 +1,6 @@
 package newquestion;
 
 import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
 
 public class LC1579 {
     public int maxNumEdgesToRemove(int n, int[][] edges) {
