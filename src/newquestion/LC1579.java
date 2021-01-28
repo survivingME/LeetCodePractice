@@ -6,7 +6,7 @@ public class LC1579 {
     public int maxNumEdgesToRemove(int n, int[][] edges) {
         UnionFind ufa = new UnionFind(n);
         UnionFind ufb = new UnionFind(n);
-        int len = edges.length, ans = 0;
+        int ans = 0;
         for (int[] edge : edges) {
             edge[1]--;
             edge[2]--;
