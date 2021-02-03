@@ -31,6 +31,7 @@ public class LC480 {
         }
 
         public void add(int x) {
+            //初始状态下把数添加到big中
             if(smallSize == 0 || x > small.peek()) {
                 big.add(x);
                 bigSize++;
@@ -43,11 +44,14 @@ public class LC480 {
         }
 
         public void remove(int x) {
-            makeInvalid(x);
+            markInvalid(x);
             balance();
             removeTop();
         }
-
+        /**
+         * 取中位数，big是存较大数的小顶堆，small是存较小数的大顶堆
+         * 比较两堆size，根据条件得到中位数
+         */
         public double getMedian() {
             switch (smallSize - bigSize) {
                 case -1 :   return big.peek();
@@ -56,8 +60,7 @@ public class LC480 {
                 default :   return 0;
             }
         }
-
-
+        //做平衡
         public void balance() {
             while(smallSize - bigSize > 1) {
                 smallSize--;
@@ -70,8 +73,8 @@ public class LC480 {
                 small.add(big.poll());
             }
         }
-
-        public void makeInvalid(int x) {
+        //标记删除
+        public void markInvalid(int x) {
             map.put(x, map.getOrDefault(x, 0) + 1);
             if(x <= small.peek()) {
                 smallSize--;
@@ -79,7 +82,7 @@ public class LC480 {
                 bigSize--;
             }
         }
-
+        //对两堆顶判定是否需要删除
         public void removeTop() {
             while(!small.isEmpty() && map.containsKey(small.peek())) {
                 decrease(small.poll());
@@ -88,7 +91,7 @@ public class LC480 {
                 decrease(big.poll());
             }
         }
-
+        //map中同步数据
         public void decrease(int x) {
             int num = map.get(x);
             if(num == 1) {
