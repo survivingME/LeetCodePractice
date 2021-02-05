@@ -1,4 +1,4 @@
-package newquestion;
+package LCNQ;
 
 public class LC643 {
     public double findMaxAverage(int[] nums, int k) {

@@ -1,4 +1,4 @@
-package newquestion;
+package LCNQ;
 
 public class LC684 {
     public int[] findRedundantConnection(int[][] edges) {

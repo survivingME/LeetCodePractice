@@ -1,4 +1,4 @@
-package newquestion;
+package LCNQ;
 
 import java.util.Arrays;
 import java.util.Comparator;

@@ -1,4 +1,4 @@
-package newquestion;
+package LCNQ;
 
 public class LC959 {
     public int regionsBySlashes(String[] grid) {

@@ -1,4 +1,4 @@
-package newquestion;
+package LCNQ;
 
 public class LC1128 {
     public int numEquivDominoPairs(int[][] dominoes) {

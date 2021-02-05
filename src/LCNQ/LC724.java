@@ -1,4 +1,4 @@
-package newquestion;
+package LCNQ;
 
 public class LC724 {
     public int pivotIndex(int[] nums) {

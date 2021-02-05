@@ -1,4 +1,4 @@
-package newquestion;
+package LCNQ;
 
 public class LC424 {
     public int characterReplacement(String s, int k) {

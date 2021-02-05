@@ -1,4 +1,4 @@
-package newquestion;
+package LCNQ;
 
 import java.util.ArrayList;
 import java.util.List;
