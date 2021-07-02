@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class LC1833 {
+    //也可以先数组排序再直接对比
     public int maxIceCream(int[] costs, int coins) {
         int ans = 0, sum = 0;
         PriorityQueue<Integer> q = new PriorityQueue<>((o1, o2) -> o2 - o1);
