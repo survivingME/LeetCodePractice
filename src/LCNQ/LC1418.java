@@ -1,7 +1,5 @@
 package LCNQ;
 
-import sun.awt.image.ImageWatched;
-
 import java.util.*;
 
 public class LC1418 {
