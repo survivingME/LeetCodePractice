@@ -8,19 +8,18 @@ public class LC1711 {
     int max = 1 << 22;
     public int countPairs(int[] ds) {
         Map<Integer, Integer> map = new HashMap<>();
-        for (int d : ds) map.put(d, map.getOrDefault(d, 0) + 1);
-        long ans = 0;
-        for (int x : map.keySet()) {
+        int ans = 0;
+        for (int x : ds) {
             for (int i = 1; i < max; i <<= 1) {
                 int t = i - x;
                 if (map.containsKey(t)) {
-                    if (t == x) ans += (map.get(x) - 1) * 1L * map.get(x);
-                    else ans += map.get(x) * 1L * map.get(t);
+                    ans += map.get(t);
+                    if (ans >= mod) ans -= mod;
                 }
             }
+            map.put(x, map.getOrDefault(x, 0) + 1);
         }
-        ans >>= 1;
-        return (int)(ans % mod);
+        return ans;
     }
 
     public static void main(String[] args) {
