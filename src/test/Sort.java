@@ -1,6 +1,7 @@
 package test;
 
 public class Sort {
+
     public static void bubbleSort(int[] arr) {
         if(arr == null || arr.length == 0) return ;
         int len = arr.length;
