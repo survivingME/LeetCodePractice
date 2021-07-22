@@ -15,32 +15,31 @@ public class LC138 {
         }
     }
     public Node copyRandomList(Node head) {
-        if(head == null) return head;
-        HashMap<Node, Node> vis = new HashMap<>();
+        if(head == null) return null;
+        HashMap<Node, Node> map = new HashMap<>();
         Node p = head;
         Node c = new Node(p.val);
-        vis.put(p, c);
+        map.put(p, c);
         while(p != null) {
-            if(vis.containsKey(p.random)) {
-                c.random = vis.get(p.random);
+            if(map.containsKey(p.random)) {
+                c.random = map.get(p.random);
             } else if(p.random == null) {
                 c.random = null;
             } else {
                 c.random = new Node(p.random.val);
-                vis.put(p.random, c.random);
+                map.put(p.random, c.random);
             }
-            if(vis.containsKey(p.next)) {
-                c.next = vis.get(p.next);
+            if(map.containsKey(p.next)) {
+                c.next = map.get(p.next);
             } else if(p.next == null) {
                 c.next = null;
             } else {
                 c.next = new Node(p.next.val);
-                vis.put(p.next, c.next);
+                map.put(p.next, c.next);
             }
             p = p.next;
             c = c.next;
         }
-        return vis.get(head);
-
+        return map.get(head);
     }
 }
