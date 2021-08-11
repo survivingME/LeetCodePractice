@@ -24,8 +24,8 @@ public class LC117 {
         if(root.left != null && root.right == null) root.left.next = getNode(root.next);
         if(root.right != null) root.right.next = getNode(root.next);
 
-        connect(root.left);
         connect(root.right);
+        connect(root.left);
         return root;
     }
 
