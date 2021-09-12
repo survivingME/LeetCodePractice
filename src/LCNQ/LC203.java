@@ -1,6 +1,6 @@
 package LCNQ;
 
-import domain.ListNode;
+import Domain.ListNode;
 
 public class LC203 {
     public ListNode removeElements(ListNode head, int val) {

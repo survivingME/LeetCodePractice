@@ -1,6 +1,6 @@
 package LCNQ;
 
-import domain.TreeNode;
+import Domain.TreeNode;
 
 public class LC104 {
     public int maxDepth(TreeNode root) {

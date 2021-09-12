@@ -1,6 +1,6 @@
 package LCNQ;
 
-import domain.ListNode;
+import Domain.ListNode;
 
 public class LC92 {
     public ListNode reverseBetween(ListNode head, int left, int right) {

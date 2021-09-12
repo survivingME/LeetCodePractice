@@ -1,6 +1,6 @@
 package LCNQ;
 
-import domain.ListNode;
+import Domain.ListNode;
 
 public class LC25 {
     public ListNode reverseKGroup(ListNode head, int k) {

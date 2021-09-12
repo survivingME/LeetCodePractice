@@ -1,6 +1,6 @@
 package ShopeeTest;
 
-import domain.TreeNode;
+import Domain.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -1,6 +1,6 @@
 package test;
 
-import domain.TreeNode;
+import Domain.TreeNode;
 
 public class ReferenceTest {
     public static void main(String[] args) {

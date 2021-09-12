@@ -1,6 +1,6 @@
 package LCNQ;
 
-import domain.ListNode;
+import Domain.ListNode;
 
 public class LC82 {
     public ListNode deleteDuplicates(ListNode head) {

@@ -1,9 +1,8 @@
 package LCNQ;
 
-import domain.TreeNode;
+import Domain.TreeNode;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class LC872 {

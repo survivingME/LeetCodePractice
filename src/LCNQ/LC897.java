@@ -1,6 +1,6 @@
 package LCNQ;
 
-import domain.TreeNode;
+import Domain.TreeNode;
 
 public class LC897 {
     TreeNode res = new TreeNode(-1);

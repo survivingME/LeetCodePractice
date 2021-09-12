@@ -1,10 +1,9 @@
 package test;
 
-import domain.TreeNode;
+import Domain.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.concurrent.LinkedTransferQueue;
 
 public class TestMakeTree {
     public TreeNode makeTree(Integer[] arr) {

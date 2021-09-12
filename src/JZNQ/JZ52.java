@@ -1,6 +1,6 @@
 package JZNQ;
 
-import domain.ListNode;
+import Domain.ListNode;
 
 public class JZ52 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
