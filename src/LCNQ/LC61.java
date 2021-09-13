@@ -1,6 +1,6 @@
 package LCNQ;
 
-import domain.ListNode;
+import Domain.ListNode;
 
 public class LC61 {
     public ListNode rotateRight(ListNode head, int k) {

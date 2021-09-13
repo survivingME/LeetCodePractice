@@ -1,6 +1,6 @@
 package LCNQ;
 
-import domain.TreeNode;
+import Domain.TreeNode;
 
 public class LC450 {
     public TreeNode deleteNode(TreeNode root, int key) {

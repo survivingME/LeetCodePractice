@@ -1,6 +1,6 @@
 package LCNQ;
 
-import domain.ListNode;
+import Domain.ListNode;
 
 public class LC160 {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
@@ -22,5 +22,15 @@ public class LC160 {
                 if(at != null && at != bt) return null;
             }
         }
+    }
+
+    public ListNode getIntersectionNode1(ListNode headA, ListNode headB) {
+        if(headA == null || headB == null) return null;
+        ListNode a = headA, b = headB;
+        while(a != b) {
+            a = a == null ? headB : a.next;
+            b = b == null ? headA : b.next;
+        }
+        return a;
     }
 }
